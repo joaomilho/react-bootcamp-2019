@@ -1,0 +1,136 @@
+@font-face{font-family:"Klarna Text";font-weight:400;src:url("https://x.klarnacdn.net/ui/fonts/v1.2/KlarnaText-Regular.woff2") format('woff2'),url("https://x.klarnacdn.net/ui/fonts/v1.2/KlarnaText-Regular.woff") format('woff')}
+@font-face{font-family:"Klarna Text";font-weight:500;src:url("https://x.klarnacdn.net/ui/fonts/v1.2/KlarnaText-Medium.woff2") format('woff2'),url("https://x.klarnacdn.net/ui/fonts/v1.2/KlarnaText-Medium.woff") format('woff')}
+@font-face{font-family:"Klarna Text";font-weight:700;src:url("https://x.klarnacdn.net/ui/fonts/v1.2/KlarnaText-Bold.woff2") format('woff2'),url("https://x.klarnacdn.net/ui/fonts/v1.2/KlarnaText-Bold.woff") format('woff')}
+@font-face{font-family:"Klarna Text";font-weight:400;font-style:italic;src:url("https://x.klarnacdn.net/ui/fonts/v1.2/KlarnaText-Italic.woff2") format('woff2'),url("https://x.klarnacdn.net/ui/fonts/v1.2/KlarnaText-Italic.woff") format('woff')}
+@font-face{font-family:"Klarna Text";font-weight:500;font-style:italic;src:url("https://x.klarnacdn.net/ui/fonts/v1.2/KlarnaText-MediumItalic.woff2") format('woff2'),url("https://x.klarnacdn.net/ui/fonts/v1.2/KlarnaText-MediumItalic.woff") format('woff')}
+@font-face{font-family:"Klarna Text";font-weight:700;font-style:italic;src:url("https://x.klarnacdn.net/ui/fonts/v1.2/KlarnaText-BoldItalic.woff2") format('woff2'),url("https://x.klarnacdn.net/ui/fonts/v1.2/KlarnaText-BoldItalic.woff") format('woff')}
+
+@font-face{font-family:"Klarna Headline";font-weight:900;src:url("https://x.klarnacdn.net/ui/fonts/v1.2/KlarnaHeadline-Bold.woff2") url("https://x.klarnacdn.net/ui/fonts/v1.2/KlarnaHeadline-Bold.woff") format('woff')}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Klarna Text";
+}
+
+main.app {
+  display: grid;
+  grid-template-columns: 50px 400px auto;
+}
+
+aside.actions-bar {
+  border-right: 1px solid #ddd;
+  height: 100vh;
+  background: #f4f4f9;
+}
+
+aside.actions-bar div.logo {
+  font-family: "Klarna Headline";
+  font-weight: 900;
+  font-size: 40px;
+  text-align: center;
+  display: block;
+  margin: 5px;
+  color: #446;
+}
+
+aside.actions-bar button::before {
+  content: '+';
+  position: relative;
+  top: -3px;
+}
+
+button {
+  display: 'block';
+  outline: none;
+  background: #9f9;
+  border: 1px solid #3a3;
+  color: #191;
+  width: 36px;
+  height: 36px;
+  font-size: 28px;
+  font-weight: 900;
+  text-align: center;
+  border-radius: 30px;
+  margin: 20px 6px;
+  
+}
+
+nav.note-list {
+  border-right: 1px solid #ddd;
+  height: 100vh;
+}
+
+nav.note-list header {
+  /* background: #f4f4f9; */
+  padding: 30px;
+  border-bottom: 2px solid #f4f4f9;
+  font-weight: 900;
+}
+
+nav.note-list ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;  
+}
+
+nav.note-list ol li {
+  padding: 30px;
+  border-bottom: 1px solid #f4f4f9;
+  cursor: pointer;
+}
+
+nav.note-list ol li.selected {
+  background: #e4e4f9;
+}
+
+nav.note-list ol li.selected:hover {
+  background: #e4e4f9;
+}
+
+nav.note-list ol li:hover {
+  background: #f4f4f9;
+}
+
+nav.note-list ol li p.created {
+  color: #778;
+  margin-top: 0;
+}
+
+nav.note-list ol li h2 {
+  padding: 0;
+  margin: 0;
+}
+
+nav.note-list ol li p.desc {
+  padding: 0;
+  margin: 0;
+}
+
+article.note {
+  display: grid;
+  grid-template-rows: 100px auto;
+}
+
+input.note-title {
+  font-size: 50px;
+  padding: 20px;
+  outline: none;
+  border: 0;
+  border-bottom: 1px solid #ddd;
+}
+
+input.note-title:focus {
+  background: #ffe;
+}
+
+textarea.note-desc {
+  font-size: 30px;
+  padding: 20px;
+  outline: none;
+  border: 0;
+}
+
+textarea.note-desc:focus {
+  background: #ffe; 
+}
